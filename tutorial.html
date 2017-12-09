@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:20px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#page-wrapper {
+  padding: 0 15px;
+  min-height: 568px;
+  background-color: white;
+}
+@media (min-width: 768px) {
+  #page-wrapper {
+    position: inherit;
+    margin: 0 0 0 250px;
+    padding: 0 30px;
+    border-left: 1px solid #e7e7e7;
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+  <h1>Header</h1>
+</div>
+
+<div class="topnav">
+  <a href="#"><i class="fa fa-user-circle-o fa-fw" ></i>Login</a>
+  <a href="#">Wish List</a>
+  <a href="#"><i class="fa fa-cart-plus fa-fw"></i>My Cart</a>
+</div>
+<div id="page-wrapper">
+</div>
+
+</body>
+</html>
